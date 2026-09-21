@@ -27,8 +27,8 @@ jobs:
       - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses || true
 
-      - name: Make Gradle wrapper executable
-        run: chmod +x ./gradlew
+      # - name: Make Gradle wrapper executable
+      #   run: chmod +x ./gradlew
 
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
